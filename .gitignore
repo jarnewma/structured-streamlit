@@ -265,3 +265,6 @@ classification/.DS_Store
 
 # content files
 *.mp4
+
+#yolo
+*.pt
