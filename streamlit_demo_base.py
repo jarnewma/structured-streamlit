@@ -31,6 +31,8 @@ def main():
     custom_classes = st.sidebar.checkbox("Use Custom Classes")
     assigned_class_id = []
 
+    st.sidebar.markdown('---')
+
     # custom classes
     if custom_classes:
         assigned_class = st.sidebar.multiselect("Select Custom Classes", list(names), default = 'person')
@@ -59,6 +61,9 @@ def main():
         st.sidebar.video(demo_bytes)
 
     print(tfflie.name)
+
+    stframe = st.empty()
+    st.sidebar.markdown('---')
 
 if __name__ == '__main__':
     try:
